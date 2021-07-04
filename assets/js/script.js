@@ -2,6 +2,9 @@
 var todayDate = moment().format('dddd, MMM Do YYYY');
 $("#currentDay").html(todayDate);
 
+var timeToday = moment().calendar();
+$("currentTime").html(timeToday);
+
 
 $(document).ready(function () {
     // saveBtn click listener 
